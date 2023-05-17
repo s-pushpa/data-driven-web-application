@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> The Salads Collection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <style>
+    .details-text {
+      display: none;
+    }
+      .recipe-divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+      
+    .recipe-image {
+    width: 265px;
+    height: 257px;
+    object-fit: cover; /* Preserve aspect ratio and fill the container */
+  }
+      .text-justify {
+    text-align: justify;
+  }
+      #banner {
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://data-driven-web-application--spushpa1.repl.co/static/saladbanner.jpg">
+    <div class="container">
+    <h2>Salads</h2>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#applesaladDetails">Crisp Apple Salad</a> 
+      <a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#peanutDetails">Peanut lime salad</a>
+      <a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#TacosaladDetails">Taco salad</a>
+      <a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#mangoDetails">Mango salad with avocado and black beans</a>
+    </div>
+<div>    
+<hr class="recipe-divider">
+  <div id="applesaladDetails" class="collapse">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="recipe-image" src="https://data-driven-web-application--spushpa1.repl.co/static/applesalad.jpg" class="img-fluid" alt="Crisp Apple Salad Image">
+        </div>
+        <div class="col-sm-9">
+          <b> Crisp Apple Salad </b>
+          <p class="text-justify">
+            This easy apple salad recipe is a delight, starring crisp fruit, greens, cheese crumbles, and a zingy maple vinaigrette.</p>
+            <b>Ingredients:</b>
+            <br>
+            <b>For the salad</b>
+        <br>
+            1 crisp tart apple (like Pink Lady)
+        <br>
+            8 cups mixed greens or tender lettuces (like butter or Bibb lettuce, frisee, etc)
+        <br>
+            ¼ cup candied pecans or toasted pecans
+        <br>
+            ¼ cup goat cheese or feta cheese crumbles
+        <br>
+            ¼ cup pomegranate seeds or dried cranberries
+        <br>
+            Optional: chopped fresh thyme, for garnish
+        </div>
+        <br>
+        
+            <b>For the maple vinaigrette dressing (use 6 tablespoons)</b>
+            <div>
+            2 tablespoons maple syrup
+        <br>
+            2 tablespoons apple cider or white wine vinegar
+        <br>
+            1 tablespoon Dijon mustard
+        <br>
+            ¼ teaspoon kosher salt
+        <br>
+            6 tablespoons olive oil
+        <br>
+            Fresh ground black pepper (optional) </div>
+            <br>
+            <b>Instructions:</b>
+            <br>
+            <p class="text-justify">If using, prepare the candied pecans in advance (or use purchased).
+Make the dressing: In a medium bowl, whisk the maple syrup, vinegar, Dijon mustard, salt, and black pepper. Whisk in the olive oil 1 tablespoon at a time until a creamy dressing forms. (If desired, make in advance and refrigerate up to 2 weeks; bring to room temperature prior to serving).
+Thinly slice the apple. Place the greens on a large platter or individual plates. Top with apple slices, candied pecans, goat cheese or feta crumbles, and pomegranate seeds or dried cranberries. Top with about 6 tablespoons of the dressing (or more as desired) and serve immediately. (To make ahead, keep all components separate with fresh ingredients and dressing refrigerated. Toss the apples with lemon juice to prevent browning. Bring dressing to room temperature and add all ingredients together directly before serving.)
+            </p>
+          </div>
+        </div>
+      </div>
+    
+          <hr class="recipe-divider">   
+          <div id="peanutDetails" class="collapse">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="recipe-image" src="https://data-driven-web-application--spushpa1.repl.co/static/peanat.jpg" class="img-fluid" alt="Peanut lime salad"> 
+              </div>
+              <div class="col-sm-9">
+                <b> Peanut lime salad </b>
+                <p class="text-justify">
+                  Make this punchy peanut lime salad as a sharing platter. Whether you enjoy it on its own or with sides, this is something you’ll be making again and again</p>
+                  Prep Time: 20 mins
+                  <br>
+                  Blend Time: 20 mins
+                  <br>
+                  Total Time: 40 mins
+                <br>
+              <b>Ingredients</b>
+              <br>
+              2 tbsp olive oil
+              <br>
+              60g plain peanuts
+              <br>
+              1 tsp black mustard seeds
+                </div>
+              <div>
+              <br>
+              10 fresh curry leaves
+              <br>
+              1 red onion, roughly chopped 
+              <br>
+              1 large potato, chopped into 1cm cubes
+              <br>
+              ½ tsp ground turmeric
+              <br>
+              300g rice, cooked and cooled
+              <br>
+              1 Ruby or Little Gem lettuce, roughly chopped
+              <br>
+              ½ cucumber, deseeded and roughly chopped
+              <br>
+              <b>For the dressing</b>
+              <br>
+              50ml olive oil
+              <br>
+              50ml lime juice
+              <br>
+              1 tsp Dijon mustard
+              <br>
+              <b>Instructions:</b>
+              <br>
+              <p class="text-justify">Heat the oil in a frying pan over a low heat and cook the peanuts for 5 mins until roasted and golden. Add the mustard seeds and curry leaves and sizzle for a few seconds. Add the onions, potatoes and 2 tbsp water, then cover and cook for 10 mins until the potatoes are soft. Remove from the heat, add ½ tsp salt and ¼ tsp freshly ground black pepper, and mix well. Leave to cool slightly, about 30 mins. Transfer to a large bowl and add the remaining ingredients. Mix the dressing ingredients together in a separate small bowl, pour this over the salad, toss well to coat everything, and serve. </p>
+              <b>Nutrition:</b>
+              <br>
+              kcal: 419 | fat: 26g | saturates: 4g | carbs: 34g | sugars: 5g | fibre: 3g | protein: 10g | salt: 0.8g
+            </div>
+          </div>
+          </div>
+              
+<hr class="recipe-divider">   
+  <div id="TacosaladDetails" class="collapse">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="recipe-image" src="https://data-driven-web-application--spushpa1.repl.co/static/Tacosalad.jpg" class="img-fluid" alt="Taco salad">
+        </div>
+        <div class="col-sm-9">
+          <b> Taco salad </b>
+          <p class="text-justify">
+            Enjoy all the flavours of a taco night in this colourful Tex-Mex salad. Just like a taco, you can make it your own and add your favourite toppings. </p>
+            Prep Time: 20 mins
+            <br>
+            Cook Time: 30 mins
+            <br>
+            Total Time: 50 mins
+            <br>
+            <br>
+        </div>
+      <div>
+            <b>Ingredients</b>
+            <br>
+            1 red onion, sliced
+            <br>
+            1 lime, juiced
+            <br>
+            1 tbsp sunflower oil
+            <br>
+            400g lean beef mince
+            <br>
+            ½ pack taco or fajita seasoning
+            <br>
+            1 tbsp tomato purée
+            <br>
+            400g can black beans, drained but not rinsed
+            <br>
+            200g tortilla chips
+            <br>
+            1 small iceberg lettuce, shredded
+            <br>
+            2 avocados, peeled and sliced
+            <br>
+            2 tomatoes, chopped into chunks
+            <br>
+            100g feta, crumbled
+            <br>
+            small bunch of coriander, chopped or leaves picked
+            <br>
+            <b>For the dressing</b>
+            <br>
+            ½ lime, juiced
+            <br>
+            5 tbsp soured cream
+            <br>
+            chilli sauce (optional), plus extra to serve
+            <br>
+            <b>Instructions:</b>
+            <br>
+            <p class="text-justify">Mix the red onion with half the lime juice and a pinch of salt in a small bowl, then set aside. Heat the oil in a frying pan over a medium-low heat, and crumble in the mince. Cook for 15-20 mins – the mince will release some liquid, but once this has bubbled away, it will sizzle in its own fat. At this point, stir or toss with a wooden spoon so the mince browns and caramelises all over. If the pan becomes too dry, add a drizzle more oil. When the mince is well toasted, sprinkle over the taco seasoning and cook for 2 mins, then stir through the tomato purée and pour over the rest of the lime juice and let it sizzle for another minute. Stir through the black beans and turn up the heat to medium, continuing to cook until everything is hot. Taste for seasoning, then set aside. To make the dressing, mix the lime juice with the soured cream and chilli sauce, if using, season, then set aside. Scatter a handful of tortilla chips into a bowl, then add a layer of lettuce, then the mince and black beans. Top with the avocado slices, chopped tomato, pickled red onions, along with any juices, and the feta. Drizzle with the dressing, then finally scatter over the coriander. Tuck more tortilla chips around the sides of the bowl, then serve.</p>
+             <b>Nutrition:</b>
+              <br>
+              Calories: kcal 733 | fat: 41g | saturates: 13g | carbs: 48g |sugars: 8g |fibre: 12g | protein: 37g | salt: 2.4g
+            </p>
+          </div>
+        </div>
+      </div>
+
+<hr class="recipe-divider">   
+  <div id="mangoDetails" class="collapse">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="recipe-image" src="https://data-driven-web-application--spushpa1.repl.co/static/mangosalad.jpg" class="img-fluid" alt="Mango salad with avocado and black beans">
+        </div>
+        <div class="col-sm-9">
+          <b> Mango salad with avocado and black beans </b>
+          <p class="text-justify">
+           Get four of your five-a-day with this healthy salad of mango, avocado and beans. It's a nutritional powerhouse that's also vegan and gluten free</p>
+            Total Time: 15 mins
+            <br>
+            <b>Ingredients</b>
+            <br>
+            1 lime, zested and juiced
+          <br>
+            1 small mango, stoned, peeled and chopped
+          <br>
+            1 small avocado, stoned, peeled and chopped
+          <br>
+            100g cherry tomatoes, halved
+          <br>
+            1 red chilli, deseeded and chopped
+          <br>
+            1 red onion, chopped
+          <br>
+            ½ small pack coriander, chopped
+          <br>
+            400g can black beans, drained and rinsed
+            <br>
+            <b>Instructions:</b>
+            <br>
+        <b>First make the caramel sauce</b>
+            <p class="text-justify">Put the lime zest and juice, mango, avocado, tomatoes, chilli and onion in a bowl, stir through the coriander and beans. </p>
+             <b>Nutrition:</b>
+              <br>
+              Calories: kcal 341 | fat: 15g | saturates: 3g | carbs: 33g | sugars: 18g | fibre: 15g | protein: 11g | salt: 0.7g
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% include 'footer.html' %}
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.show-more').click(function(e) {
+        e.preventDefault();
+        $(this).next('.details-text').slideToggle();
+        $(this).text(function(_, text) {
+          return text === 'Show More' ? 'Show Less' : 'Show More';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
