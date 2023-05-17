@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> The Recipe Collection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <style>
+    .details-text {
+      display: none;
+    }
+      .recipe-divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+      
+    .recipe-image {
+    width: 265px;
+    height: 257px;
+    object-fit: cover; /* Preserve aspect ratio and fill the container */
+  }
+      .text-justify {
+    text-align: justify;
+  }
+      #banner {
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://data-driven-web-application--spushpa1.repl.co/static/pastabanner.jpg">
+    <div class="container">
+    <h2>Pastas</h2>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#chickenpastaDetails">Chicken pasta bake</a> 
+      <a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#creamyDetails">Creamy mushroom pasta</a>
+    </div>
+<div>    
+<hr class="recipe-divider">
+  <div id="chickenpastaDetails" class="collapse">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="recipe-image" src="https://data-driven-web-application--spushpa1.repl.co/static/Chicken pasta bake.jpg" class="img-fluid" alt="Chicken pasta bake">
+        </div>
+        <div class="col-sm-9">
+          <b> Chicken pasta bake </b>
+          <p class="text-justify">
+            Enjoy this gooey cheese and chicken pasta bake for the ultimate weekday family dinner. Serve straight from the dish with a dressed green salad </p>
+            <b>Ingredients:</b>
+          <br>
+            4 tbsp olive oil
+          <br>
+            1 onion, finely chopped
+          <br>
+            2 garlic cloves, crushed
+          <br>
+            ¼ tsp chilli flakes
+          <br>
+            2 x 400g cans chopped tomatoes
+          <br>
+            1 tsp caster sugar
+        </div>
+        <div>
+          <br>
+            6 tbsp mascarpone
+          <br>
+            4 skinless chicken breasts, sliced into strips
+          <br>
+            300g penne
+          <br>
+            70g mature cheddar, grated
+          <br>
+            50g grated mozzarella
+          <br>
+            ½ small bunch of parsley, finely chopped
+          <br>
+            <b>Instructions:</b>
+            <br>
+            <p class="text-justify"> Heat 2 tbsp of the oil in a pan over a medium heat and fry the onion gently for 10-12 mins. Add the garlic and chilli flakes and cook for 1 min. Tip in the tomatoes and sugar and season to taste. Simmer uncovered for 20 mins or until thickened, then stir through the mascarpone. Heat 1 tbsp of oil in a non-stick frying pan. Season the chicken and fry for 5-7 mins or until the chicken is cooked through. Heat the oven to 220C/200C fan/gas 7. Cook the penne following pack instructions. Drain and toss with the remaining oil. Tip the pasta into a medium sized ovenproof dish. Stir in the chicken and pour over the sauce. Top with the cheddar, mozzarella and parsley. Bake for 20 mins or until golden brown and bubbling.
+            </p>
+          <b>Nutrition:</b>
+              <br>
+              kcal: 575 | fat: 30g | saturates: 14g | carbs: 41g | sugars: 9g | fibre: 5g | protein: 33g| salt: 0.5g
+          </div>
+          </div>
+        </div>
+      </div>
+    
+          <hr class="recipe-divider">   
+          <div id="creamyDetails" class="collapse">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="recipe-image" src="https://data-driven-web-application--spushpa1.repl.co/static/mushroom_pasta.jpg" class="img-fluid" alt="Peanut lime salad"> 
+              </div>
+              <div class="col-sm-9">
+                <b> Creamy mushroom pasta </b>
+                <p class="text-justify">
+                  Make this creamy mushroom pasta dish on days when you need a big bowl of comfort. Cream, parmesan, white wine, lemon zest and parsley make this a rich and flavourful dinner </p>
+                  Prep Time: 15 mins
+                  <br>
+                  Cook Time: 25 mins
+                  <br>
+                  Total Time: 35 mins
+                <br>
+              <b>Ingredients</b>
+              <br>
+              2 tbsp olive oil
+                <br>
+              1 tbsp butter
+                <br>
+              1 onion, finely chopped
+              </div>
+              <div>
+                <br>
+              250g button chestnut mushroom, sliced
+                <br>
+              1 garlic clove, finely grated
+                <br>
+              100ml dry white wine
+                <br>
+              200ml double cream
+                <br>
+              1 lemon, zest only
+                <br>
+              200g parmesan (or vegetarian alternative), grated, plus extra to serve
+                <br>
+              300g tagliatelle or linguini
+                <br>
+              ½ small bunch parsley, finely chopped
+              <br>
+              <b>Instructions:</b>
+              <br>
+              <p class="text-justify"> STEP 1
+Heat the oil and butter in a medium saucepan. Fry the onion over a low heat for 10 mins or until softened and translucent. Add the mushrooms and cook for 10 mins over a medium heat. Add the garlic and cook for 2 mins. Add the wine and bring to a simmer, reduce the liquid by half. Add the double cream and bring to a simmer, then add the lemon zest and parmesan. Season with salt and plenty of black pepper. Meanwhile, cook the pasta following pack instructions. Reserve 100ml of the pasta water. Toss the pasta in the pan with the creamy sauce and enough of the reserved water to loosen. Stir through the parsley, divide into bowls and top with extra cheese, if you like. </p>
+              <b>Nutrition:</b>
+              <br>
+              kcal: 801 | fat: 52g |saturates: 30g | carbs: 45g | sugars: 4g | fibre: 5g | protein: 29g | salt: 0.97g
+            </div>
+          </div>
+          </div>
+    </div>
+  </div>
+  {% include 'footer.html' %}
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.show-more').click(function(e) {
+        e.preventDefault();
+        $(this).next('.details-text').slideToggle();
+        $(this).text(function(_, text) {
+          return text === 'Show More' ? 'Show Less' : 'Show More';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
